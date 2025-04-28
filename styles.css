@@ -1,21 +1,35 @@
 body {
     margin: 0;
+    font-family: Roboto;
 }
 
 .header,
 .sidebar,
 .main-body {
-    border: solid black 1px;
     box-sizing: border-box;
+    padding: 10px;
+}
+
+.header,
+.project,
+.stuff-box {
+    box-shadow: 3px 3px 4px silver;
 }
 
 .parent-grid {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 150px 1fr;
 }
 
+button {
+    border-radius: 25px;
+    background-color: #1992d4;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+}
 
 /* Header Styling */
 .header {
@@ -48,9 +62,51 @@ body {
 .sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    background-color: #1992d4;
+    display: grid;
+    gap: 12px;
+}
+
+.logo-container {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+    gap: 24px;
+    color: #ffffff;
+}
+
+.logo-container img {
+    max-height: 50px;
+    fill: white;
+}
+
+nav {
+    display: grid;
 }
 
 /* Main Body Styling */
 .main-body {
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    background-color: #e2e8f0;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    
+}
+
+.project,
+.stuff-box {
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.project {
+    border-left: 6px solid #f0b429;
 }
