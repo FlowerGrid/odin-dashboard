@@ -65,23 +65,47 @@ button {
     background-color: #1992d4;
     display: grid;
     gap: 12px;
+    padding-left: 32px;
 }
 
 .logo-container {
     display: grid;
-    grid-template-columns: 40px 1fr;
+    grid-template-columns: 60px 1fr;
     align-items: center;
-    gap: 24px;
+    gap: 18px;
     color: #ffffff;
 }
 
-.logo-container img {
-    max-height: 50px;
+.logo-container svg {
+    /* max-height: 100px; */
     fill: white;
 }
 
 nav {
     display: grid;
+
+    gap: 24px;
+}
+
+nav a {
+    display: grid;
+    grid-template-columns: repeat(2, 1rem);
+    gap: 28px;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.nav-link svg {
+    height: 24px;
+    width: 24px;
+    fill: white;
+}
+
+.icon {
+    align-items: center;
 }
 
 /* Main Body Styling */
