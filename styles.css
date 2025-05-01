@@ -10,6 +10,18 @@ p {
     margin: 2px 0;
 }
 
+h2 {
+    font-size: 14pt;
+}
+
+h3 {
+    font-size: 12pt;
+}
+
+h4 {
+    font-size: 11pt;
+}
+
 h3,
 h4 {
     margin: 0;
@@ -50,7 +62,7 @@ button {
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    gap: 10px;
+    gap: 24px;
     padding: 16px 60px;
 }
 
@@ -82,14 +94,14 @@ input[type=search]:focus {
 .user-tools {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    gap: 20px;
+    gap: 32px;
     align-items: center;
     justify-content: end;
 }
 
 .small-profile {
-    height: 48px;
-    width: 48px;
+    height: 40px;
+    width: 40px;
 }
 
 .large-profile {
@@ -124,7 +136,7 @@ input[type=search]:focus {
     font-size: 10pt;
 }
 
-.username {
+.header .username {
     /* font-weight: bold; */
     font-size: 16pt;
 }
@@ -200,13 +212,13 @@ nav a {
     grid-template-columns: 3fr 1fr;
     gap: 20px;
     background-color: #e2e8f0;
+    overflow: scroll;
 }
 
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    
 }
 
 .project,
@@ -220,6 +232,8 @@ nav a {
     display: grid;
     border-left: 6px solid #f0b429;
     align-items: space-between;
+    box-sizing: border-box;
+    min-height: 205px;
 }
 
 .project-actions-panel {
@@ -232,4 +246,25 @@ nav a {
 
 .project-action svg {
     height: 24px;
+}
+
+.trending-user {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: start;
+    gap: 8px;
+}
+
+
+.trending {
+    display: grid;
+    gap: 22px;
+}
+
+.user-handle p {
+    line-height: 1.25;
+}
+
+.handle {
+    color: #000000;
 }
