@@ -55,6 +55,7 @@ button {
     border: none;
     height: 2.5rem;
     width: 118px;
+    cursor: pointer;
 }
 
 /* Header Styling */
@@ -90,6 +91,11 @@ input[type=search]:focus {
 
 .header svg {
     height: 24px;
+}
+
+.header a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .user-tools {
