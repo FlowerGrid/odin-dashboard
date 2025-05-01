@@ -7,6 +7,12 @@ p {
     color: #656363;
     font-size: 10pt;
     line-height: 1.5;
+    margin: 2px 0;
+}
+
+h3,
+h4 {
+    margin: 0;
 }
 
 .header,
@@ -26,7 +32,7 @@ p {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 150px 1fr;
+    /* grid-template-rows: 150px 1fr; */
 }
 
 button {
@@ -35,6 +41,8 @@ button {
     font-weight: bold;
     color: #ffffff;
     border: none;
+    height: 2.5rem;
+    width: 118px;
 }
 
 /* Header Styling */
@@ -43,7 +51,7 @@ button {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 10px;
-    padding: 12px 40px;
+    padding: 16px 60px;
 }
 
 .search-bar {
@@ -73,9 +81,10 @@ input[type=search]:focus {
 
 .user-tools {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, auto);
     gap: 20px;
     align-items: center;
+    justify-content: end;
 }
 
 .small-profile {
@@ -107,6 +116,8 @@ input[type=search]:focus {
     justify-items: start;
     gap: 16px;
     align-items: center;
+    font-weight: bold;
+    line-height: 1.5;
 }
 
 .welcome {
@@ -114,14 +125,16 @@ input[type=search]:focus {
 }
 
 .username {
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 16pt;
 }
 
 .post-buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap: 18px;
+    align-items: center;
+    justify-items: end;
 }
 
 
